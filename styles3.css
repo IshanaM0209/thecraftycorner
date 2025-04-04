@@ -1,4 +1,4 @@
-/* Primary Styles */
+/* Primary Styles */ 
 body {
     font-family: Calibri, sans-serif;
     margin: 0;
@@ -26,19 +26,19 @@ header {
     margin-right: 10px;
 }
 
+/* Navigation styles */
 nav ul {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    list-style: none;  /* Remove dots */
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
+    margin: 5px;
 }
 
 nav ul li input {
@@ -46,6 +46,25 @@ nav ul li input {
     border-radius: 5px;
     border: none;
 }
+
+/* Style the navigation links */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Add an underline to the active page */
+nav ul li a.active {
+    border-bottom: 2px solid #cc0066 !important; /* Underline color */
+}
+
+/* Add hover effect */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 
 h2, h3 {
     color: #cc0066;
